@@ -512,6 +512,20 @@ button.parts{width:100%;min-height:40px;text-align:left}
 [data-skin=leopard] .chip .meb{background:var(--pink,#ffc0d9);color:#2b2b2b;border:1.5px solid #2b2b2b;border-radius:8px 3px 6px 4px}
 [data-skin=leopard] .chip.me{border-width:2.5px}
 [data-skin=boy] .chip .meb{background:#111;color:#fff;border-radius:0}
+
+/* ===== v11: toolbar panel (已同步 · 地图 · 皮肤 · 邀请) ===== */
+.tools{padding:7px 12px 9px 9px;flex-wrap:nowrap}
+[data-skin=leopard] .tools{background:#fff3cc;border:2px solid #2b2b2b;border-radius:18px 7px 16px 9px/9px 16px 7px 18px;box-shadow:2px 3px 0 #2b2b2b;transform:rotate(-.4deg)}
+[data-skin=leopard] .tools > *{transform:rotate(.4deg)}
+[data-skin=boy] .tools{background:#C9B8FF;border:3px solid #111;box-shadow:5px 5px 0 #111;padding:8px 13px 11px 9px}
+@media (max-width:400px){ .tools{gap:7px} }
+
+/* ===== v11b: section tabs on the same paper strip (hand-drawn only) ===== */
+[data-skin=leopard] #tabs{width:fit-content;max-width:100%;box-sizing:border-box;gap:8px;padding:8px 12px 10px 9px;background:#fff3cc;border:2px solid #2b2b2b;border-radius:9px 16px 7px 18px/16px 9px 18px 7px;box-shadow:2px 3px 0 #2b2b2b;transform:rotate(.3deg);margin-right:4px}
+[data-skin=leopard] #tabs button{transform:rotate(-.3deg)}
+[data-skin=leopard] #tabs button.on{transform:rotate(-1.3deg)}
+[data-skin=leopard] #tabs button.on:nth-child(2n){transform:rotate(.7deg)}
+@media (max-width:420px){ [data-skin=leopard] #tabs{gap:6px;padding:7px 9px 9px 7px} [data-skin=leopard] #tabs button{padding:6px 11px} }
 </style>
 </head>
 <body>
